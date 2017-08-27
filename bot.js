@@ -1,8 +1,9 @@
 /****************************************
  *
- *   zBot: An all-in-one bot.
- *   Copyright (C) 2017 Victor Tran and Rylan Arbour
- *	 Rewritten and redesigned by zBlake.
+ *   dBot (fork of zBot): An all-in-one bot.
+ *   zBot Copyright (C) 2017 Victor Tran and Rylan Arbour
+ *	zBot Rewritten and redesigned by zBlake.
+ *   dBot Copyright (C) 2017 MrDiamond123
  *
  *   This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -134,7 +135,7 @@ async function setGame() {
 }
 
 client.on('ready', () => {
-	log("> zBot is now online!", logType.success)
+	log("> dBot is now online!", logType.success)
 	client.setInterval(setGame, 300000);
 	setGame();
   client.setInterval(function(){Settings.saveConfig()}, 300000);
@@ -303,7 +304,7 @@ client.on('guildMemberAdd', function(guildMember) {
 client.on('guildCreate', function(guild) {
 log("New Guild: " + guild.id, logType.info);
 Settings.newGuild(guild)
-guild.owner.send(":wave: **Hey!** Thanks for inviting me to your server! I'm *zBot*, and I am an 'all-in-one' bot created by zBlake#6715. I feature moderation tools, entertainment, customizable profiles and lots more!\n\n:warning: **zBot** is currently undergoing a big update. You may experience temporary downtime or glitches every so often, and I apologize for this. However, this update should be finished very soon.\n*:information_source: To get started using zBot, type `+help` to see what you can do!*\n:gear: If you want to configure my settings, such as which channel logs get sent to, you can run `+config settings` and see the settings that are customizable. It's highly recommended that you spend a few minutes configuring my settings first, so that you can choose where logs and other messages are sent.\n\nIf you ever need any help, feel free to visit the GitHub page here: **https://github.com/zBlakee/zBot** and you can find some information in the 'Wiki'. Have fun!");
+guild.owner.send(":wave: **Hey!** Thanks for inviting me to your server! I'm *dBot*, and I am an 'all-in-one' bot forked by Mr_Diamond123#3817. I feature moderation tools, entertainment, customizable profiles and lots more!\n\n:warning: **dBot** is currently undergoing a big update. You may experience temporary downtime or glitches every so often, and I apologize for this. However, this update should be finished very soon.\n*:information_source: To get started using dBot, type `+help` to see what you can do!*\n:gear: If you want to configure my settings, such as which channel logs get sent to, you can run `+config settings` and see the settings that are customizable. It's highly recommended that you spend a few minutes configuring my settings first, so that you can choose where logs and other messages are sent.\n\nIf you ever need any help, feel free to visit the GitHub page here: **https://github.com/MrDiamond123/dBot** and you can find some information in the 'Wiki'. Have fun!");
 });
 
 client.on('guildRemove', function(guild) {
