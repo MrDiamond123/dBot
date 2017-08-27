@@ -1,2 +1,2 @@
-# zBot
-An all-in-one Discord bot.
+# dBot
+Diamond's bot that he made I think...
