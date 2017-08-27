@@ -135,7 +135,7 @@ sql.get(`SELECT * FROM slots WHERE userId ='${message.author.id}' AND guild = '$
 				ctx.shadowBlur = 3;
 
 				// Username
-				if (member.id == 246574843460321291) {
+				if (member.id == 125411691516133376) {
 					texter(member.displayName, 75, 35)
 				} else if (member.highestRole.name == "@everyone") {
 				ctx.font = '16px Roboto';
